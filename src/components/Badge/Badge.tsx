@@ -1,3 +1,5 @@
+import { ExpenseItemBadge } from "./styles";
+
 export const Badge = () => {
-  return <span>Badge</span>;
+  return <ExpenseItemBadge>$100</ExpenseItemBadge>;
 };

@@ -1,9 +1,10 @@
 import { Form } from "../Form/Form";
+import { AddExpenseTitle } from "./styles";
 
 export const AddExpense = () => {
   return (
     <div>
-      <h3 className="title">Add Expense</h3>
+      <AddExpenseTitle>Add Expense</AddExpenseTitle>
       <Form />
     </div>
   );

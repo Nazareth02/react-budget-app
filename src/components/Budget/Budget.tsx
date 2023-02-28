@@ -7,9 +7,10 @@ import { Title, CardGroup, TitleGroup } from "./styles";
 
 export const Budget = () => {
   const options: SelectOptions[] = [
-    { value: "usd", label: "USD" },
-    { value: "rub", label: "RUB" },
-    { value: "by", label: "BY" },
+    { value: "$", label: "USD" },
+    { value: "€", label: "EUR" },
+    { value: "₽", label: "RUB" },
+    { value: "Br", label: "BYN" },
   ];
   return (
     <div>
