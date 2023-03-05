@@ -18,7 +18,7 @@ const CrossBtn = styled.span`
   cursor: pointer;
 `;
 
-const ExpenseItemWrapper = styled.div`
+const ExpenseItemWrapper = styled.li`
   padding: 0 20px;
   line-height: 50px;
   max-width: 335px;

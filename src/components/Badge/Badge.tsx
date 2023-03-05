@@ -1,5 +1,10 @@
+import { useExpensesContext } from "../../context/ExpensesContext/ExpensesContext";
 import { ExpenseItemBadge } from "./styles";
 
-export const Badge = () => {
-  return <ExpenseItemBadge>$100</ExpenseItemBadge>;
+interface BadgeProps {
+  badgeValue: number;
+}
+
+export const Badge = ({ badgeValue }: BadgeProps) => {
+  return <ExpenseItemBadge>{badgeValue}$</ExpenseItemBadge>;
 };

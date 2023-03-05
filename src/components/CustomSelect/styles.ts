@@ -26,7 +26,11 @@ const customStyles: StylesConfig<SelectOptions> = {
     color: "#000000",
     ...baseStyles,
   }),
-  indicatorSeparator: (baseStyles) => ({ ...baseStyles, color: "#EEEEEE" }),
+  indicatorSeparator: (baseStyles) => ({
+    ...baseStyles,
+    color: "rgba(238, 238, 238, 1)",
+  }),
+  dropdownIndicator: (baseStyles) => ({ ...baseStyles, color: "rgba(238, 238, 238, 1)" }),
 };
 
 export { customStyles };

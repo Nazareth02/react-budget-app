@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const ExpensesTitle = styled.h3`
+const ExpenseTitle = styled.h3`
   margin-top: 30px;
   font-family: "Inter";
   font-style: normal;
@@ -14,4 +14,4 @@ const StyledExpenses = styled.div`
   grid-gap: 30px;
 `;
 
-export { ExpensesTitle, StyledExpenses };
+export { ExpenseTitle, StyledExpenses };
