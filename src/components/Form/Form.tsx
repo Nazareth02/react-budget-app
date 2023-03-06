@@ -12,7 +12,7 @@ import { useExpensesContext } from "../../context/ExpensesContext/ExpensesContex
 import { Expense } from "../../context/ExpensesContext/types";
 import { Button } from "../Button/Button";
 import { Input } from "../Input/Input";
-import { InputGroup, StyledForm } from "./styles";
+import { ErrorMessage, InputGroup, StyledForm } from "./styles";
 
 export type FormValues = {
   name: string;
@@ -25,6 +25,7 @@ export const Form = () => {
     register,
     handleSubmit,
     reset,
+    clearErrors,
     formState: { errors },
   } = useForm<FormValues>();
 
@@ -35,6 +36,7 @@ export const Form = () => {
       cost,
       id: uuidv4(),
     });
+    clearErrors();
     reset();
   };
 
@@ -46,12 +48,15 @@ export const Form = () => {
           control={control}
           render={({ field: { ref, ...rest } }) => (
             <Input
-              type="text"
               register={register}
               placeholder="enter name ..."
               {...rest}
               {...register("name", {
-                required: "field 'name' is required!!!",
+                required: "field 'name' is required!",
+                pattern: {
+                  value: /^[A-Za-z" /']+$/,
+                  message: "😡Only Letters required!",
+                },
                 maxLength: {
                   value: 15,
                   message: "max length: 15 symbols",
@@ -60,16 +65,17 @@ export const Form = () => {
             />
           )}
         />
+        {errors.name?.message && <ErrorMessage>{errors.name?.message}</ErrorMessage>}
         <Controller
           name="cost"
           control={control}
           render={({ field: { ref, ...rest } }) => (
             <Input
-              type="number"
               register={register}
               placeholder="enter cost ..."
               {...register("cost", {
-                required: "field 'cost' is required!!!",
+                required: "field 'cost' is required!",
+                pattern: { value: /[0-9]/, message: "😡 Only numbers required!" },
                 maxLength: {
                   value: 5,
                   message: "max length: 5 symbols",
@@ -77,9 +83,8 @@ export const Form = () => {
               })}
             />
           )}
-          {...(errors.cost?.message && <span>{errors.cost?.message}</span>)}
-          {...(errors.name?.message && <span>{errors.name.message}</span>)}
         />
+        {errors.cost?.message && <ErrorMessage>{errors.cost?.message}</ErrorMessage>}
       </InputGroup>
       <Button type="submit" />
     </StyledForm>

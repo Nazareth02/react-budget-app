@@ -9,5 +9,12 @@ const InputGroup = styled.div`
   display: grid;
   grid-gap: 20px;
 `;
-
-export { StyledForm, InputGroup };
+const ErrorMessage = styled.span`
+  color: red;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+`;
+export { StyledForm, InputGroup, ErrorMessage };

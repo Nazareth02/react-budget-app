@@ -9,8 +9,7 @@ export const Budget = () => {
   const options: SelectOptions[] = [
     { value: "$", label: "USD" },
     { value: "€", label: "EUR" },
-    { value: "₽", label: "RUB" },
-    { value: "Br", label: "BYN" },
+    { value: "£", label: "GBR" },
   ];
   return (
     <div>
