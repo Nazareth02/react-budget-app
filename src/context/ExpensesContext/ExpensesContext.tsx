@@ -1,5 +1,4 @@
 import { createContext, useContext, useState } from "react";
-import { v4 as uuidv4, v4 } from "uuid";
 import { ExpensesContextProviderProps, ExpensesContextValue } from "./types";
 
 const ExpensesContext = createContext<ExpensesContextValue>({} as ExpensesContextValue);

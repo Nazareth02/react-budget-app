@@ -34,5 +34,21 @@ const BudgetCardBtn = styled.button`
   color: #000000;
   cursor: pointer;
 `;
-
-export { BudgetCardText, BudgetCardBtn, StyledBudgetCard };
+const EditModeInput = styled.input`
+  width: 115%;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  background: transparent;
+  border-style: none;
+  color: rgba(255, 255, 255, 0.9);
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &:focus {
+    outline: none;
+  }
+`;
+export { BudgetCardText, BudgetCardBtn, StyledBudgetCard, EditModeInput };
