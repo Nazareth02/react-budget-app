@@ -1,7 +1,7 @@
 import { StylesConfig } from "react-select";
-import { SelectOptions } from "../../types";
+import { CurrencyOption } from "./CustomSelect";
 
-const customStyles: StylesConfig<SelectOptions> = {
+const customStyles: StylesConfig<CurrencyOption> = {
   control: (baseStyles) => ({
     ...baseStyles,
     background: "#FFFFFF",

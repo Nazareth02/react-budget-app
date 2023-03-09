@@ -1,13 +1,28 @@
-import Select from "react-select";
-import { SelectOptions } from "../../types";
+import Select, { SingleValue } from "react-select";
+import { Currency } from "../../config/currency";
+import { useCurrencyContext } from "../../context/CurrencyContext/CurrencyContext";
 import { customStyles } from "./styles";
 
-interface SelectProps {
-  options: SelectOptions[];
-  // value: SelectOptions;
-  // onChange: (option: SelectOptions) => void;
+export interface CurrencyOption {
+  label: keyof typeof Currency;
+  value: Currency;
 }
 
-export const CustomSelect = ({ options }: SelectProps) => {
-  return <Select options={options} styles={customStyles} />;
+export const CustomSelect = () => {
+  const { selectedCurrency, setCurrency, currencies } = useCurrencyContext();
+  const handleChange = (value: SingleValue<CurrencyOption>) => {
+    if (value) {
+      setCurrency(value);
+    }
+  };
+  return (
+    <Select
+      options={currencies}
+      value={selectedCurrency}
+      styles={customStyles}
+      onChange={handleChange}
+      isMulti={false}
+      isSearchable={false}
+    />
+  );
 };

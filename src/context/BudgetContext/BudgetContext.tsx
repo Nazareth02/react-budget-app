@@ -7,7 +7,7 @@ export const useBudgetContext = () => useContext<BudgetContextValue>(BudgetConte
 
 const useBudgetContextValue = () => {
   const [budgetContext, setBudgetContext] = useState<BudgetContextValue>(() => ({
-    budget: 3000,
+    budget: 0,
     setBudget: (newBudget) => {
       setBudgetContext((ctx) => ({
         ...ctx,

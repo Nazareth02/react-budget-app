@@ -6,14 +6,14 @@ const RemainingCardText = styled.p`
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: #000000;
 `;
-const StyledRemainingCard = styled.div`
+const StyledRemainingCard = styled.div<{ $isOverspending: boolean }>`
   padding: 36px 20px;
   max-width: 335px;
   max-height: 100px;
   align-items: center;
-  background: #ccd5ff;
+  background: ${({ $isOverspending }) => ($isOverspending ? "#FF0000" : "#ccd5ff")};
+  color: ${({ $isOverspending }) => ($isOverspending ? "#FFFFFF" : "#000000")};
   border-radius: 10px;
 `;
 
