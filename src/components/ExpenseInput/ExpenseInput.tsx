@@ -1,7 +1,7 @@
-import React, { HTMLInputTypeAttribute, InputHTMLAttributes } from "react";
+import { HTMLInputTypeAttribute, InputHTMLAttributes } from "react";
 import { StyledInput } from "../Input/styles";
-interface ExpenseInputProps extends InputHTMLAttributes<HTMLInputTypeAttribute> {}
+interface ExpenseInputProps extends InputHTMLAttributes<HTMLInputElement> {}
 
-export const ExpenseInput = ({ placeholder, name }: ExpenseInputProps) => {
-  return <StyledInput placeholder={placeholder} name={name}></StyledInput>;
+export const ExpenseInput = (props: ExpenseInputProps) => {
+  return <StyledInput {...props}></StyledInput>;
 };

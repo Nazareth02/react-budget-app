@@ -14,4 +14,15 @@ const StyledExpenses = styled.div`
   grid-gap: 30px;
 `;
 
-export { ExpenseTitle, StyledExpenses };
+const ErrorNotFound = styled.span`
+  text-align: center;
+  padding: 90px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+`;
+
+export { ExpenseTitle, StyledExpenses, ErrorNotFound };

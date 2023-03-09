@@ -1,12 +1,23 @@
 import { useExpensesContext } from "../../context/ExpensesContext/ExpensesContext";
+import { Expense } from "../../context/ExpensesContext/types";
 import { ExpenseItem } from "../ExpenseItem/ExpenseItem";
 
-export const ExpenseList = () => {
-  const { expenses } = useExpensesContext();
+interface ExpensesListProps {
+  expenses: Expense[];
+}
+
+export const ExpenseList = ({ expenses }: ExpensesListProps) => {
   return (
     <ul>
       {expenses.map(({ id, name, cost }) => {
-        return <ExpenseItem id={id} listItemLabel={name} badgeCost={cost}></ExpenseItem>;
+        return (
+          <ExpenseItem
+            key={id}
+            id={id}
+            listItemLabel={name}
+            badgeCost={cost}
+          ></ExpenseItem>
+        );
       })}
     </ul>
   );
