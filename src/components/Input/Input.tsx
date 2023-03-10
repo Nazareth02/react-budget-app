@@ -1,6 +1,6 @@
 import { HTMLInputTypeAttribute, InputHTMLAttributes } from "react";
-import { FieldValues, UseFormRegister } from "react-hook-form";
-import { FormValues } from "../Form/Form";
+import { UseFormRegister } from "react-hook-form";
+import { FormValues } from "components/Form/Form";
 import { StyledInput } from "./styles";
 
 interface InputProps extends InputHTMLAttributes<HTMLInputTypeAttribute> {

@@ -1,6 +1,6 @@
-import { useExpensesContext } from "../../context/ExpensesContext/ExpensesContext";
-import { Expense } from "../../context/ExpensesContext/types";
-import { Badge } from "../Badge/Badge";
+import { Badge } from "components";
+import { useExpensesContext } from "context/ExpensesContext/ExpensesContext";
+import { Expense } from "context/ExpensesContext/types";
 import {
   ExpenseItemTitle,
   CrossBtn,

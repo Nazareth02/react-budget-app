@@ -1,11 +1,8 @@
+import { ExpenseInput, ExpenseList } from "components";
+import { useInput, useDebounce } from "hooks";
 import { useEffect, useState } from "react";
-import { useForm } from "react-hook-form";
-import { useExpensesContext } from "../../context/ExpensesContext/ExpensesContext";
-import { Expense } from "../../context/ExpensesContext/types";
-import { useDebounce } from "../../hooks/useDebounce";
-import { useInput } from "../../hooks/useInput";
-import { ExpenseInput } from "../ExpenseInput/ExpenseInput";
-import { ExpenseList } from "../ExpenseList/ExpenseList";
+import { useExpensesContext } from "context/ExpensesContext/ExpensesContext";
+import { Expense } from "context/ExpensesContext/types";
 import { ErrorNotFound, ExpenseTitle, StyledExpenses } from "./styles";
 
 export const Expenses = () => {

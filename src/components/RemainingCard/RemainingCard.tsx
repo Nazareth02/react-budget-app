@@ -1,7 +1,7 @@
-import { useBudgetContext } from "../../context/BudgetContext/BudgetContext";
-import { useCurrencyContext } from "../../context/CurrencyContext/CurrencyContext";
-import { useExpensesContext } from "../../context/ExpensesContext/ExpensesContext";
-import { Expense } from "../../context/ExpensesContext/types";
+import { useBudgetContext } from "context/BudgetContext/BudgetContext";
+import { useCurrencyContext } from "context/CurrencyContext/CurrencyContext";
+import { useExpensesContext } from "context/ExpensesContext/ExpensesContext";
+import { Expense } from "context/ExpensesContext/types";
 import { RemainingCardText, StyledRemainingCard } from "./styles";
 
 export const RemainingCard = () => {

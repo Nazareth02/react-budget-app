@@ -1,4 +1,4 @@
-import { HTMLInputTypeAttribute, InputHTMLAttributes } from "react";
+import { InputHTMLAttributes } from "react";
 import { StyledInput } from "../Input/styles";
 interface ExpenseInputProps extends InputHTMLAttributes<HTMLInputElement> {}
 

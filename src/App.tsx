@@ -1,8 +1,5 @@
-import React from "react";
-import { AddExpense } from "./components/AddExpense/AddExpense";
-import { Budget } from "./components/Budget/Budget";
-import { Expenses } from "./components/Expenses/Expenses";
-import { StyledApp } from "./ui/styledApp";
+import { Budget, Expenses, AddExpense } from "components";
+import { StyledApp } from "ui";
 
 export const App = () => (
   <StyledApp>

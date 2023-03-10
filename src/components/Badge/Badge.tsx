@@ -1,4 +1,4 @@
-import { useCurrencyContext } from "../../context/CurrencyContext/CurrencyContext";
+import { useCurrencyContext } from "context/CurrencyContext/CurrencyContext";
 import { ExpenseItemBadge } from "./styles";
 
 interface BadgeProps {

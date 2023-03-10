@@ -1,5 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import { Currency } from "../../config/currency";
+import { Currency } from "config";
 import { CurrencyContextProviderProps, CurrencyContextValue } from "./types";
 
 const CurrencyContext = createContext<CurrencyContextValue>({} as CurrencyContextValue);

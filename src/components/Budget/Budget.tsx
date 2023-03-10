@@ -1,8 +1,4 @@
-import { Currency } from "../../config/currency";
-import { BudgetCard } from "../BudgetCard/BudgetCard";
-import { CurrencyOption, CustomSelect } from "../CustomSelect/CustomSelect";
-import { RemainingCard } from "../RemainingCard/RemainingCard";
-import { SpentCard } from "../SpentCard/SpentCard";
+import { BudgetCard, CustomSelect, RemainingCard, SpentCard } from "components";
 import { Title, CardGroup, TitleGroup } from "./styles";
 
 export const Budget = () => {

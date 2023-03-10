@@ -1,6 +1,6 @@
-import { useCurrencyContext } from "../../context/CurrencyContext/CurrencyContext";
-import { useExpensesContext } from "../../context/ExpensesContext/ExpensesContext";
-import { Expense } from "../../context/ExpensesContext/types";
+import { useCurrencyContext } from "context/CurrencyContext/CurrencyContext";
+import { useExpensesContext } from "context/ExpensesContext/ExpensesContext";
+import { Expense } from "context/ExpensesContext/types";
 import { StyledSpentCard, SpentCardText } from "./styles";
 
 export const SpentCard = () => {

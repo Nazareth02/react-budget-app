@@ -1,18 +1,8 @@
 import { v4 as uuidv4 } from "uuid";
-import { FormEvent, useState } from "react";
-import {
-  Controller,
-  FieldValues,
-  SubmitHandler,
-  useForm,
-  UseFormRegister,
-} from "react-hook-form";
-import { v4 } from "uuid";
-import { useExpensesContext } from "../../context/ExpensesContext/ExpensesContext";
-import { Expense } from "../../context/ExpensesContext/types";
-import { Button } from "../Button/Button";
-import { Input } from "../Input/Input";
+import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import { ErrorMessage, InputGroup, StyledForm } from "./styles";
+import { Button, Input } from "components";
+import { useExpensesContext } from "context/ExpensesContext/ExpensesContext";
 
 export type FormValues = {
   name: string;

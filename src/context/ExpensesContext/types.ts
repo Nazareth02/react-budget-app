@@ -1,4 +1,3 @@
-import { ExpensesContextProvider } from "./ExpensesContext";
 import { ReactNode } from "react";
 
 export interface ExpensesContextProviderProps {

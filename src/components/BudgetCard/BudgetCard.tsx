@@ -1,8 +1,6 @@
-import { useState } from "react";
-import { useBudgetContext } from "../../context/BudgetContext/BudgetContext";
-import { useCurrencyContext } from "../../context/CurrencyContext/CurrencyContext";
-import { useInput } from "../../hooks/useInput";
-import { useToggle } from "../../hooks/useToggle";
+import { useBudgetContext } from "context/BudgetContext/BudgetContext";
+import { useCurrencyContext } from "context/CurrencyContext/CurrencyContext";
+import { useToggle, useInput } from "hooks";
 import { BudgetCardBtn, BudgetCardText, EditModeInput, StyledBudgetCard } from "./styles";
 
 export const BudgetCard = () => {
