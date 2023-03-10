@@ -29,11 +29,12 @@ Here's why this project is helpful:
 ### Built With
 
 - [![React][react.js]][react-url]
-- [![npm][https://www.npmjs.com/]][npm-url]
-- [![styled-components][https://styled-components.com/]][styled-components-url]
-- [![typescript][https://www.typescriptlang.org/]][typescript-url]
-- [![react-hook-form][https://react-hook-form.com/]][react-hook-form-url]
-- [![react-select][https://react-select.com/home]][react-select-url]
+- [![npm][npm]][npm-url]
+- [![react.js][react.js]][react-url]
+- [![TypeScript][typescript]][typescript-url]
+- [![styled-components][styled-components]][styled-components-url]
+- [![reacthookform][reacthookform]][reacthookform-url]
+- [![react-select][react-select]][react-select-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -50,3 +51,13 @@ Project Link: [https://github.com/Nazareth02/react-budget-app](https://github.co
 [product-screenshot]: ./src/images/budget-app.jpg
 [react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [react-url]: https://reactjs.org/
+[npm]: https://img.shields.io/static/v1?style=for-the-badge&logo=npm&label=&message=npm&color=555555
+[npm-url]: https://www.npmjs.com/
+[typescript]: https://img.shields.io/static/v1?style=for-the-badge&logo=TypeScript&label=&message=TypeScript&color=555555
+[typescript-url]: https://www.typescriptlang.org/
+[styled-components]: https://img.shields.io/static/v1?style=for-the-badge&logo=styled-components&label=&message=styled-components&color=555555
+[styled-components-url]: https://styled-components.com/
+[reacthookform]: https://img.shields.io/static/v1?style=for-the-badge&logo=ReactHookForm&label=&message=ReactHookForm&color=555555
+[reacthookform-url]: https://react-hook-form.com/
+[react-select]: https://img.shields.io/static/v1?style=for-the-badge&label=&message=react-select&color=555555
+[react-select-url]: https://react-select.com/home
