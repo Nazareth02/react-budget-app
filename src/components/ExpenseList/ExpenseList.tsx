@@ -8,18 +8,11 @@ interface ExpensesListProps {
 }
 
 export const ExpenseList = ({ expenses }: ExpensesListProps) => {
-  const isExpensesListFull = expenses.length > 5;
+  const isExpensesListFull = expenses.length > 4;
   return (
     <StyledExpensesList $isExpensesListFull={isExpensesListFull}>
-      {expenses.map(({ id, name, cost }) => {
-        return (
-          <ExpenseItem
-            key={id}
-            id={id}
-            listItemLabel={name}
-            badgeCost={cost}
-          ></ExpenseItem>
-        );
+      {expenses.map((expense) => {
+        return <ExpenseItem key={expense.id} expense={expense}></ExpenseItem>;
       })}
     </StyledExpensesList>
   );

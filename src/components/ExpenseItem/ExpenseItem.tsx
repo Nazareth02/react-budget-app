@@ -1,4 +1,5 @@
 import { useExpensesContext } from "../../context/ExpensesContext/ExpensesContext";
+import { Expense } from "../../context/ExpensesContext/types";
 import { Badge } from "../Badge/Badge";
 import {
   ExpenseItemTitle,
@@ -8,18 +9,16 @@ import {
 } from "./styles";
 
 interface ExpenseItemProps {
-  listItemLabel: string;
-  badgeCost: number;
-  id: string;
+  expense: Expense;
 }
 
-export const ExpenseItem = ({ id, listItemLabel, badgeCost }: ExpenseItemProps) => {
+export const ExpenseItem = ({ expense: { id, name, cost } }: ExpenseItemProps) => {
   const { deleteExpense } = useExpensesContext();
   return (
     <ExpenseItemWrapper>
-      <ExpenseItemTitle>{listItemLabel}</ExpenseItemTitle>
+      <ExpenseItemTitle>{name}</ExpenseItemTitle>
       <ExpenseItemBadgeGroup>
-        <Badge badgeValue={badgeCost} />
+        <Badge badgeValue={cost} />
         <CrossBtn onClick={() => deleteExpense(id)}>✖</CrossBtn>
       </ExpenseItemBadgeGroup>
     </ExpenseItemWrapper>
