@@ -30,7 +30,6 @@ Here's why this project is helpful:
 
 - [![React][react.js]][react-url]
 - [![npm][npm]][npm-url]
-- [![react.js][react.js]][react-url]
 - [![TypeScript][typescript]][typescript-url]
 - [![styled-components][styled-components]][styled-components-url]
 - [![reacthookform][reacthookform]][reacthookform-url]
