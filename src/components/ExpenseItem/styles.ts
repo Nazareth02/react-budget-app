@@ -21,7 +21,6 @@ const CrossBtn = styled.span`
 const ExpenseItemWrapper = styled.li`
   padding: 0 20px;
   line-height: 50px;
-  max-width: 335px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;

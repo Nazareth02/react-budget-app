@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 const StyledInput = styled.input`
-  max-width: 335px;
   padding: 15px 20px;
   background: #ffffff;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);

@@ -17,7 +17,6 @@ const CardGroup = styled.div`
 const TitleGroup = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  max-width: 335px;
 `;
 
 export { Title, CardGroup, TitleGroup };

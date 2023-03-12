@@ -9,7 +9,6 @@ const RemainingCardText = styled.p`
 `;
 const StyledRemainingCard = styled.div<{ $isOverspending: boolean }>`
   padding: 36px 20px;
-  max-width: 335px;
   max-height: 100px;
   align-items: center;
   background: ${({ $isOverspending }) => ($isOverspending ? "#FF0000" : "#ccd5ff")};

@@ -13,6 +13,10 @@
   </p>
 </div>
 
+Watch a demo of the project👉 <a href="https://nazareth02.github.io/react-budget-app/">here</a>.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## About The Project
 
 ![Product Screen Shot][product-screenshot]

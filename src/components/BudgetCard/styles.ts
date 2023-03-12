@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
 const StyledBudgetCard = styled.div`
-  position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   padding: 30px 20px;
-  max-width: 335px;
   max-height: 100px;
   background: #7cc6fe;
   border-radius: 10px;
